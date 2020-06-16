@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.farm {
+  width: 60%;
+}
+
+.farm-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.farm-image img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.info {
+  display: flex;
+}
+
+.info p {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #666;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info p {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .farm-image img {
+    margin-top: 2.5%;
+    max-width: 90%;
+    max-height: 15%;
+  }
+  .container {
+    width: 100%;
+    overflow: hidden;
+    align-items: end;
+  }
+  .farm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    overflow: hidden;
+  }
+
+  .info {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .info p {
+    font-size: 0.75rem;
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+  }
+  #left-bottom {
+    display: none;
+  }
+}

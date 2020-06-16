@@ -1,0 +1,56 @@
+.bilde,
+.telefon,
+.mail {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* color: #fd9d0c; */
+  color: #999;
+  font-size: 2rem;
+}
+
+.telefon a,
+.mail a {
+  transition: color 0.25s ease-out;
+  color: #666;
+}
+
+.telefon a:hover,
+.mail a:hover {
+  color: #fd9d0c;
+}
+
+.bilde img {
+  max-height: 50vh;
+  border-radius: 500px;
+}
+
+.kontakt {
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .bilde img {
+    max-height: 30vh;
+    border-radius: 500px;
+  }
+}
